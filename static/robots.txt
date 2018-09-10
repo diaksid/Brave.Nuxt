@@ -1,0 +1,8 @@
+# http://www.robotstxt.org
+
+Sitemap: https://khrabrov.biz/sitemap.xml
+
+User-agent: *
+Disallow: /api
+
+Host: https://khrabrov.biz
