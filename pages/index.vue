@@ -25,16 +25,17 @@
         sm7
         text-sm-right
         )
-          a.phone(href='tel://+74955067844')
+          a.phone(href='mail://mail@hrabrov.bis') mail@khrabrov.bis
+          //a.phone(href='tel://+74955067844')
             v-icon phone
             |
             small +7 (495)
             |
             | 506-78-44
-          a.map(
-          href='http://clck.ru/9t43U'
-          target='_blank'
-          )
+          //a.map(
+            href='http://clck.ru/9t43U'
+            target='_blank'
+            )
             v-icon place
             |
             | 117556, Москва, Чонгарский бульвар
@@ -78,11 +79,13 @@
       return {
         backgroundImage: require('~/assets/images/bg/__.jpg'),
         pages: [
+          /*
           {
             to: '/rent',
             title: 'Аренда техники',
             icon: 'local_shipping'
           },
+          */
           {
             to: '/equipment',
             title: 'Поставка оборудования',

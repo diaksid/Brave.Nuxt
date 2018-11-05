@@ -3,6 +3,7 @@
     v-layout(
     row
     wrap
+    justify-center
     )
       v-flex(
       xs12
@@ -67,14 +68,14 @@
               :data-sitekey="reSitekey"
               )
 
-      v-flex(
+    //v-flex(
       xs12
       md6
       )
-        v-hover
+      v-hover
           v-card(
           slot-scope="{hover}"
-          :class="`ymap-wrapper elevation-${hover ? 12 : 3}`"
+    //    :class="`ymap-wrapper elevation-${hover ? 12 : 3}`"
           )
             v-layout(
             align-center
@@ -83,23 +84,23 @@
               v-progress-circular(
               indeterminate
               color="#ff6700"
-              :size="100"
-              :width="5"
+    //        :size="100"
+    //        :width="5"
               )
-            yandex-map(
+    //      yandex-map(
             v-if="showMap"
             map-type="map"
-            :zoom="`${$vuetify.breakpoint.smAndDown ? 14 : 16}`"
-            :coords="[55.653267, 37.608985]"
+    //      :zoom="`${$vuetify.breakpoint.smAndDown ? 14 : 16}`"
+    //      :coords="[55.653267, 37.608985]"
             )
               ymap-marker(
               marker-id="0"
               marker-type="placemark"
               cluster-name="1"
-              :coords="[55.653267, 37.608985]"
-              :hint-content="tooltip"
-              :balloon="balloon"
-              :icon="icon"
+    //        :coords="[55.653267, 37.608985]"
+    //        :hint-content="tooltip"
+    //        :balloon="balloon"
+    //        :icon="icon"
               )
 
     script(

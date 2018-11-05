@@ -82,11 +82,13 @@
             title: 'Главная',
             icon: 'apps'
           },
+          /*
           {
             to: '/rent',
             title: 'Аренда техники',
             icon: 'local_shipping'
           },
+          */
           {
             to: '/equipment',
             title: 'Поставка оборудования',
